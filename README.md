@@ -4,12 +4,12 @@
 キーボードから入力した文字列とその文字数を印字するプログラムProgE1を作成した。
 しかし、キーボードから期待以外の文字が入力されると実行時エラーが発生して異常終了してしまう。
 
-まず、以下に示した3つの入力を実際に行い、それぞれの入力でどの命令が実行されるタイミングでどんな実行時エラー
-が発生するかを確認する。
+まず、以下に示した２つの入力を実際に行い、それぞれの入力でどの命令が実行されるタイミングでどんな実行時エラー
+が発生するかを確認しなさい。
 
 つぎに実行時エラーをtry-catch文を用いて例外処理するように修正しなさい。
 
-### ProgE1.java
+### ProgE1.java（修正前）
 ```java
 public class ProgE1 {
 
@@ -25,7 +25,7 @@ public class ProgE1 {
 }
 ```
 
-### 期待通りの入力
+### 期待通りの入力での出力
 ```
 キーボードの確認：　1を押してエンターキーを押してください。:1
 文字をタイプしてエンターキーを押してください。
@@ -33,11 +33,11 @@ public class ProgE1 {
 入力は「生命太郎」。文字数は4です。
 ```
 
-### 処理Aで例外が発生する入力例
+### 例外が発生する入力の例
 ```
 キーボードの確認：　1を押してエンターキーを押してください。:2 
 ```
-
+（注）
 ### 例外処理を行った実行例
 ```
 キーボードの確認：　1を押してエンターキーを押してください。:2
@@ -46,7 +46,6 @@ public class ProgE1 {
 java.lang.NullPointerException
 	at ProgE1.main(ProgE1.java:12)
 ```
+（注）BlueJでは、Java.lang.NullPointerException 以下のメッセージは下半分のペインに表示されます。
+　　　ProgE1.java：に表示されるコードの行番号はコメント行の有無で変わります。
 
-
-### Notes
-- The JDK is installed on GitHub Actions machines, so you're also able to directly invoke `javac`, `java`, or any other CLI command included in the JDK. 
