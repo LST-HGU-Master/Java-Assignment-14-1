@@ -33,18 +33,37 @@ public class ProgE1 {
 入力は「生命太郎」。文字数は4です。
 ```
 
-### 例外が発生する入力の例
+### 例外が発生する入力の例(1)
 ```
 キーボードの確認：　1を押してエンターキーを押してください。:2 
 ```
-（注）
-### 例外処理を行った実行例
+
+### 例外が発生する入力の例(2)
+```
+キーボードの確認：　1を押してエンターキーを押してください。:s 
+```
+
+
+### 例外処理を行った実行例(1)
 ```
 キーボードの確認：　1を押してエンターキーを押してください。:2
 エラーが生じたので処理を中断します。
 エラーの内容を表示します。
 java.lang.NullPointerException
 	at ProgE1.main(ProgE1.java:12)
+```
+
+### 例外処理を行った実行例(2)
+```
+キーボードの確認：　1を押してエンターキーを押してください。:s
+エラーが生じたので処理を中断します。
+エラーの内容を表示します。
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at ProgE1.main(ProgE1.java:14)
 ```
 （注）BlueJでは、Java.lang.NullPointerException 以下のメッセージは下半分のペインに表示されます。
 　　　ProgE1.java：に表示されるコードの行番号はコメント行の有無で変わります。
