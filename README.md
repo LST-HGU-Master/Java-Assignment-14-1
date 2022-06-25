@@ -65,6 +65,6 @@ java.util.InputMismatchException
 	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
 	at ProgE1.main(ProgE1.java:14)
 ```
-（注）BlueJでは、Java.lang.NullPointerException 以下のメッセージは下半分のペインに表示されます。
+（注）BlueJでは、Java.lang.NullPointerException などのエラーメッセージは下半分のペインに表示されます。
 　　　ProgE1.java：に表示されるコードの行番号はコメント行の有無で変わります。
 
